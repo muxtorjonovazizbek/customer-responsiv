@@ -1,0 +1,38 @@
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding-top: 100px;
+    .work__h {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 51px;
+        color: $textColor;
+    }
+
+    .product__items {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        padding-top: 73px;
+        .product__item {
+            display: flex;
+            align-items: center;
+        }
+        .product__item__img {
+            width: 500px;
+            height: 279px;
+        }
+        .product__item__info {
+            width: 438px;
+            height: 210px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            color: $textColor;
+        }
+        .product__order {
+            order: 2;
+        }
+    }
+}
