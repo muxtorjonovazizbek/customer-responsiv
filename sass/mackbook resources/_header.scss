@@ -1,0 +1,202 @@
+@import "./variable";
+
+header {
+    width: 100%;
+    background-color: #1F2E35;
+    box-shadow: 0px 10px 10px #2c383e;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    .navbar {
+       display: flex;
+       align-items: center;
+       gap: 24px;
+       padding-top: 25px;
+       padding-bottom: 25px;
+       justify-content: space-between;
+       .navbar__img {
+        width: 150px;
+        height: 60px;
+       }
+       .navbar__right {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        .navbar__links {
+            display: flex;
+            gap: 30px;
+           
+            .navbar___link{
+                color: $textColor;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.5px;
+                &:hover {
+                    color: #03bfa9;
+                }
+            }
+        }
+
+        .navbar__side__bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 250px;
+            z-index: 999;
+            background-color: #1f2e3560;
+            backdrop-filter: blur(10px);
+            box-shadow: -10px 0 10px rgba(105, 105, 106, 0.395);
+            flex-direction: column; 
+            display: flex;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            display: none;
+            color: $textColor;
+            .navbar___link__bar {
+                 color: $textColor;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.5px;
+                &:hover {
+                    color: #03bfa9;
+                }
+           }
+
+        }
+        .nabar__menu{
+            display: none;
+            order: 4;
+        }
+
+       
+
+       .navbar__btns {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        .navbar__btn {
+            width: 102px;
+            height: 43px;
+            border: 1px solid #BCD0E5;
+            border-radius: 5px;
+            background-color: transparent;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: $textColor;
+            transition: 0.3s ease-out;
+            cursor: pointer;
+            &:hover {
+                background-color: #02897A;
+            }
+        }
+       }
+
+    }
+}
+
+@media (max-width: 1200px) {
+  .navbar__link__del {
+    display: none;  
+  }
+  .navbar {
+    .navbar__right {
+        .nabar__menu {
+            display: block;
+        }
+    }
+  }
+}
+
+@media (max-width:768px) {
+    .navbar {
+        .navbar__btns {
+            .navbar__btn {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:360px) {
+    .navbar {
+        .navbar__right {
+            .navbar__side__bar {
+                width: 60%;
+            }
+        }
+    }
+}
+
+// @media (max-width:576px) {
+//     .navbar {
+//         .navbar__right {
+//             .navbar__links {
+//                 position: fixed;
+//                 top: 0px;
+//                 left: 100px;
+//                 height: 100vh;
+//                 width: 100px;
+//                 background-color: red;  
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//             }
+//             .header__list-show {
+//                 left: 0;
+//                 display: block;
+                
+//             }
+//         }
+//     }
+// }
+
+
+
+@media (max-width: 576px) {
+    .navbar {
+        .navbar__btns {
+            .navbar__btns__img {
+                display: none;
+                
+            }
+        }
+    }
+}
+@media (max-width: 410px) {
+    header{
+        .navbar {
+            display: flex;
+            gap: 0;
+            .navbar__right {
+                .nabar__menu {
+                    // padding-right: 20px;     
+                }
+
+            }
+        }
+        
+    }
+}
+@media (max-width: 380px) {
+    header{
+        .navbar {
+            display: flex;
+            gap: 0px;
+            .navbar__right {
+                .nabar__menu {
+                    // padding-right:50px;
+                }
+
+            }
+        }
+        
+    }
+}
+}

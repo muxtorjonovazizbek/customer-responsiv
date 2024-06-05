@@ -1,0 +1,164 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    .contact__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 150px;
+        gap: 30px;
+    }
+    .contact__h {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 57px;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: #fff;
+    }
+    .contact__p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: #fff;
+        width: 312px;
+    }
+    .conatact__icons {
+        padding-top: 50px;
+        display: flex;
+        gap: 20px;
+    }
+
+
+    .contact__message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        gap: 45px;
+        width: 868px;
+        height: 670px;
+        border: 2px solid #464646;
+        background-color: #22343D;
+        border-radius: 10px;
+        .message__title {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            letter-spacing: 0.1px;
+            color: #fff;
+        }
+        .message__form {
+            display: flex;
+            width: 90%;
+            flex-direction: column;
+            gap: 45px;
+    
+            
+            .message__form__inp {
+                width: 100%;
+                // height: 54px;
+                padding: 19px 20px;
+                border-radius: 39px;
+                border: none;
+                outline: none;
+            }
+            ::placeholder {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0.1px;
+                color: #22343D;
+               
+            }
+            .message__form__ta {
+                width: 100%;
+                height: 193px;
+                padding: 23px 20px;
+                color: #22343D;
+                font-weight: 400;
+                font-size: 15px;
+                letter-spacing: 0.1px;
+                resize: none;
+                outline: none;
+            }
+            .message__form__btn {
+                background-color: #02897A;
+                border-radius: 35px;
+                border: none;
+                width: 145px;
+                height: 52px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 0.2px;
+                color: #fff;
+                cursor: pointer;
+                // padding: 18px 38px;
+
+            }
+        }
+
+    }
+    
+    
+}
+
+@media (max-width:915px) {
+    .contact {
+        .contact__message {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .contact {
+        .contact__message {
+            .message__form {
+                .message__form__btn__box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:915px) {
+    .contact {
+       .contact__top {
+        .contact__map {
+            width: 95%;
+        }   
+       }
+       
+    }
+}
+@media (max-width:731px) {
+    .contact {
+        .contact__map {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .contact {
+        .contact__map {
+            width: 100%;
+            
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: poppins;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../Poppins/Poppins-Regular.ttf);
+}
+
+body {
+    background: #1F2E35;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}

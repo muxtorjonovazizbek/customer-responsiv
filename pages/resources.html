@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/resources.min.css   ">
+    <title>Resources</title>
+</head>
+<body>
+    <header>                                                                                                                        
+        <nav class="navbar container">
+            <a href="./resources.html"><img class="navbar__img" src="../img/logo.svg" alt="logo"></a>
+
+            <div class="navbar__right">
+                <ul class="navbar__links">
+                    <li class="navbar__link__del"><a class="navbar___link" href="#">Product</a></li>
+                    <li class="navbar__link__del"><a class="navbar___link" href="#">Customers</a></li>
+                    <li class="navbar__link__del"><a class="navbar___link" href="#">Pricing</a></li>
+                    <li class="navbar__link__del"><a class="navbar___link" href="#">Resources</a></li>
+                </ul>
+                <ul class="navbar__side__bar">
+                    <li><a class="navbar___link__bar" href="#">Product</a></li>
+                    <li><a class="navbar___link__bar" href="#">Customers</a></li>
+                    <li><a class="navbar___link__bar" href="#">Pricing</a></li>
+                    <li><a class="navbar___link__bar" href="#">Resources</a></li>
+                    <li onclick="hideSideBar()"><a class="navbar___link__bar" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                </ul>
+
+                <aside onclick="showSidebar()" class="nabar__menu menu__order" >
+                   <img class="navbar__img_self" src="../img/menu.svg" alt="img">
+                </aside>
+
+                <script>
+                    function showSidebar() {
+                        const navbar__side__bar = document.querySelector('.navbar__side__bar')
+                        navbar__side__bar.style.display = 'flex'
+                    }
+                    function hideSideBar() {
+                        const navbar__side__bar = document.querySelector('.navbar__side__bar')
+                        navbar__side__bar.style.display = 'none'
+                    }
+                </script>
+    
+                <div class="navbar__btns">
+                    <button class="navbar__btn">Sign In</button>
+                    <button class="navbar__btn">Sign Up</button>
+                    <img class="navbar__btns__img" src="../img/toggle.svg" alt="toggle">
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="business container">
+            <div class="business__infos">
+                <h1 class="business__title">Great Business made with Product.</h1>
+                <p class="business___desc">Build better customer relationships easily messaging that provides a more personal experience for you and your customers.</p>
+                <div class="business__inps">
+                    <input class="business__input" type="email" placeholder="Enter your email address">
+                    <div>
+                        <button class="business__btn" type="submit">Join Now</button>
+                    </div>
+                </div>
+
+                <div class="business__accounts">
+                    <div class="business__accounts__imgs">
+                        <img class="business__accounts__imgs__roundone" src="../img/b img1.svg" alt="img">
+                        <img class="business__accounts__imgs__roundtwo" src="../img/b img2.svg" alt="img">
+                        <img class="business__accounts__imgs__roundthree" src="../img/b img3.svg" alt="img">
+                    </div>
+                    
+                    
+                     <p class="business__accounts__p">Join over <b>4,000+ </b>other</p>
+                    
+                </div>
+            </div>
+
+            <div class="business__img">
+                <img src="../img/businnes img.svg" alt="img">
+            </div>
+        </section>
+
+        <section class="story container">
+            <div class="story__info">
+                <h1 class="story__info__h">Latest Stories</h1>
+                <p class="story__info__p">We focus on ergonomics and meeting you where you work. It's only a keystroke away. </p>
+
+            </div>
+
+            <div class="story__cards">
+                <div class="story__card">
+                    <img src="../img/story img 1.svg" alt="img">
+                    <div class="story__card__text">
+                        <p>By <b>Wahid Ari</b> |  03 March 2019</p>
+                        <h3>Increasing Prosperity With Positive Thinking</h3>
+                    </div>
+                </div>
+                <div class="story__card">
+                    <img src="../img/story img 1.svg" alt="img">
+                    <div class="story__card__text">
+                        <p>By <b>Wahid Ari</b> |  03 March 2019</p>
+                        <h3>Increasing Prosperity With Positive Thinking</h3>
+                    </div>
+                </div>
+                <div class="story__card">
+                    <img src="../img/story img 1.svg" alt="img">
+                    <div class="story__card__text">
+                        <p>By <b>Wahid Ari</b> |  03 March 2019</p>
+                        <h3>Increasing Prosperity With Positive Thinking</h3>
+                    </div>
+                </div>
+                <div class="story__card">
+                    <img src="../img/story img 1.svg" alt="img">
+                    <div class="story__card__text">
+                        <p>By <b>Wahid Ari</b> |  03 March 2019</p>
+                        <h3>Increasing Prosperity With Positive Thinking</h3>
+                    </div>
+                </div>
+                <div class="story__card">
+                    <img src="../img/story img 1.svg" alt="img">
+                    <div class="story__card__text">
+                        <p>By <b>Wahid Ari</b> |  03 March 2019</p>
+                        <h3>Increasing Prosperity With Positive Thinking</h3>
+                    </div>
+                </div>
+                <div class="story__card">
+                    <img src="../img/story img 1.svg" alt="img">
+                    <div class="story__card__text">
+                        <p>By <b>Wahid Ari</b> |  03 March 2019</p>
+                        <h3>Increasing Prosperity With Positive Thinking</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact container">
+            <div class="contact__top">
+                <h1 class="contact__h">Contact Us</h1>
+                <p class="contact__p">Need more detailed information? 
+                Get in touch with us.
+                </p>
+
+                <div class="conatact__icons">
+                    <img src="../img/contact insta.svg" alt="img">
+                    <img src="../img/conatact fb.svg" alt="img">
+                    <img src="../img/contact tw.svg" alt="img">
+                </div>
+
+                <img class="contact__map" src="../img/contct map.svg" alt="img">
+            </div>
+
+            <div class="contact__message ">
+                <h1 class="message__title">Send a message</h1>
+                <form class="message__form">
+                    <input class="message__form__inp" type="text" placeholder="Your Name">
+                    <input class="message__form__inp" type="text" placeholder="Your Email">
+                    <textarea class="message__form__ta">Your massage</textarea>
+
+                    <div class="message__form__btn__box">
+                        <button class="message__form__btn">Send</button>
+                    </div>
+                </form>
+            </div>
+
+
+
+        </section>
+
+
+    </main>
+
+    
+    <footer class="container">
+        <div class="footer__top">
+        <div class="footer__logos">
+            <a href="./index.html"
+            ><img src="../img/footer logo.svg" alt="img"
+            /></a>
+
+            <div class="footer__social">
+            <a class="footer__social__a" href="#"><img src="../img/footer ins.svg" alt="ins-img" /></a>
+            <a class="footer__social__a" href="#"><img src="../img/footer fb.svg" alt="fb-img" /></a>
+            <a class="footer__social__a" href="#"><img src="../img/footer tw.svg" alt="tw-img" /></a>
+            </div>
+        </div>
+
+        <ul class="footer__links">
+            <p class="footer__link__title">Resource</p>
+            <li><a class="footer__link" href="#">About Us</a></li>
+            <li><a class="footer__link" href="#">Blog</a></li>
+            <li><a class="footer__link" href="#">Contact</a></li>
+            <li><a class="footer__link" href="#">FAQ</a></li>
+        </ul>
+
+        <ul class="footer__links">
+            <p class="footer__link__title">Legal Stuff</p>
+            <li><a class="footer__link" href="#">Disclaimer</a></li>
+            <li><a class="footer__link" href="#">Financing</a></li>
+            <li><a class="footer__link" href="#">Privacy Policy</a></li>
+            <li><a class="footer__link" href="#">Terms of Service</a></li>
+        </ul>
+
+        <div class="footer__inp__side">
+            <h4 class="footer__inp__text">
+            knowing you're always on the best energy deal.
+            </h4>
+            <input class="footer__inp__input" type="text" />
+            <button class="footer__inp__btn">Sign up Now</button>
+        </div>
+        </div>
+
+        <div class="footer__bottom">
+        <p class="footer__bottom__p">
+            Made With Love By Figmaland All Right Reserved
+        </p>
+        </div>
+    </footer>
+
+    <!-- <script src="../app.js"></script> -->
+</body>
+</html>

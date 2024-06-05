@@ -9,6 +9,7 @@ header {
     .navbar {
        display: flex;
        align-items: center;
+    //    justify-content: center;
        gap: 24px;
        padding-top: 25px;
        padding-bottom: 25px;
@@ -38,6 +39,7 @@ header {
         }
         .nabar__menu{
             display: none;
+            order: 4;
         }
        }
 
@@ -67,20 +69,19 @@ header {
 }
 
 @media (max-width: 1200px) {
-    .navbar {
-        .navbar__right {
-            .navbar__links {
+    header{
+        .navbar {
+            .navbar__right {
                 .navbar___link {
                     display: none;
                 }
+                .nabar__menu {
+                    display: block;
+                }
             }
         }
-
-        .nabar__menu {
-            display: block;
-        }
+        
     }
-    
 }
 
 @media (max-width:768px) {
@@ -102,13 +103,33 @@ header {
         }
     }
 }
+@media (max-width: 410px) {
+    header{
+        .navbar {
+            display: flex;
+            gap: 0;
+            .navbar__right {
+                .nabar__menu {
+                    // padding-right: 20px;     
+                }
 
-// @media (max-width:400px) {
-//     .navbar {
-//         .navbar__right {
-//             .navbar__menu {
-//                 padding-right: 20px;
-//             }
-//         }
-//     }
-// }
+            }
+        }
+        
+    }
+}
+@media (max-width: 380px) {
+    header{
+        .navbar {
+            display: flex;
+            gap: 0px;
+            .navbar__right {
+                .nabar__menu {
+                    // padding-right:50px;
+                }
+
+            }
+        }
+        
+    }
+}

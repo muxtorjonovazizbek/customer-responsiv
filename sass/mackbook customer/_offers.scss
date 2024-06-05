@@ -1,0 +1,108 @@
+
+.offers {
+     background-color: #22343D;
+    .offers__inner__cover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        .offers__inner__title {
+            width: 537px;
+            height: 96px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 48px;
+            text-align: center;
+            color: $textColor;
+            margin-bottom: 90px;
+        }
+    }
+    .offers__box {
+        display: flex;
+        gap: 300px;
+    }
+    .offers__box__inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 22px;
+        .offers__box__img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .offers__box__title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            color: #fff;
+        }
+        .offers__box__ps {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .offers__box__p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 32px;
+                color: #fff;
+            }
+        }
+        .offers__box__pout {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width:946px) {
+    .offers {
+        .offers__box {
+            display: flex;
+            gap: 200px;
+        }
+    }
+}
+@media (max-width:829px) {
+    .offers {
+        .offers__box {
+            display: flex;
+            gap: 150px;
+        }
+    }
+}
+@media (max-width:769px) {
+    .offers {
+        .offers__box {
+            display: flex;
+            gap: 90px;
+        }
+    }
+}
+@media (max-width:699px) {
+    .offers {
+       
+        .offers__inner__cover {
+            .offers__inner__title {
+                width: 300px;
+                height: 192px;
+                font-size: 32px;
+            }
+            .offers__box {
+                display: flex;
+                flex-direction: column;
+    
+                .offers__box__inner {
+                    .offers__box__img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
